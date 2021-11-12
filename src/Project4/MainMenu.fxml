@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox prefHeight="126.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="126.0" prefWidth="404.0">
+               <children>
+                  <Label prefHeight="84.0" prefWidth="400.0" text="           RU Pizzeria" textFill="#f80101">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="37.0" prefWidth="400.0">
+                     <children>
+                        <Label prefHeight="43.0" prefWidth="147.0" text="                Phone Number:" />
+                        <TextField prefHeight="26.0" prefWidth="234.0">
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="484.0" prefWidth="168.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="121.0" prefWidth="218.0">
+               <graphic>
+                  <ImageView fitHeight="113.0" fitWidth="196.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@deluxe.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label prefHeight="17.0" prefWidth="210.0" text="                   Order Deluxe" />
+            <Button mnemonicParsing="false" prefHeight="145.0" prefWidth="217.0">
+               <graphic>
+                  <ImageView fitHeight="119.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@hawaiian.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label prefHeight="17.0" prefWidth="175.0" text="                    Order Hawaiin" />
+            <Button mnemonicParsing="false" prefHeight="137.0" prefWidth="189.0">
+               <graphic>
+                  <ImageView fitHeight="158.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pepperoni.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label prefHeight="17.0" prefWidth="175.0" text="                   Order Pepperoni" />
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="431.0" prefWidth="166.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="149.0" prefWidth="146.0">
+               <graphic>
+                  <ImageView fitHeight="112.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cart.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Label prefHeight="17.0" prefWidth="201.0" text="          View Order">
+               <VBox.margin>
+                  <Insets bottom="50.0" />
+               </VBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" prefHeight="161.0" prefWidth="154.0">
+               <graphic>
+                  <ImageView fitHeight="147.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@order.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label prefHeight="17.0" prefWidth="201.0" text="            Store Orders" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>
