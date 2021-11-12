@@ -1,7 +1,38 @@
 package Project4;
 
-public class Main {
-    public static void main (String args[]){
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
+/**
+ * Main used for launching the GUI
+ * @author Brian Wang, Kyle Sia
+ */
+public class Main extends Application {
+
+    /**
+     * Starts the JavaFX for tuitionManager
+     * @param primaryStage
+     */
+    @Override
+    public void start(Stage primaryStage) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("mainController.fxml"));
+            primaryStage.setTitle("RU Pizzeria");
+            primaryStage.setScene(new Scene(root, 750, 550));
+            primaryStage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Calls launch method for the GUI
+     * @param args
+     */
+    public static void main(String[] args) {
+        launch(args);
     }
 }
